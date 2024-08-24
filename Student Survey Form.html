@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title> Student survey Form </title>
+        <style>
+            body{
+                background-image:url(gku.jpg);
+                background-size: contain;
+                background-color: rgba(7, 0, 0, 0.5);
+                background-blend-mode: multiply;
+                background-size: contain;
+                color: #c3cad8;
+            }
+            .center{
+                border: 2px solid rgb(238, 224, 224);
+                border-radius: 8px;
+                max-width: 60vw;
+                margin: auto;
+                background:transparent; 
+                backdrop-filter: blur(1px);
+            }
+            h1{
+                text-align: center;
+                padding: 40px;
+                margin: 13px 15px;
+                background-color: transparent;
+                color: #c3cad8;
+            }
+            .details{
+                padding: 15px 60px;
+
+            }
+            .details label{
+                font-size: 1em;
+            }
+            .details #sname{
+                width: 96.5%;
+                height: 2.5vh;
+                padding: 10px;
+                font-size: 0.8rem;
+                margin-top: 15px;
+                border-radius: 5px;
+                border: 1px solid gray;
+                font-weight: 600;
+            }
+            .details .height{
+                height: 2.5vh;
+                padding: 10px;
+                font-size: 0.9rem;
+                border-radius: 5px;
+                font-weight: 500;
+                border: 1px solid gray;
+                width: 21vw;
+            }
+            .details .between{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                width: 99.5%;
+            }
+            .details #space{
+                margin-top: 10px;
+            }
+            .details select{
+                height: 6vh;
+                font-size: 0.9rem;
+                border-radius: 5px;
+                border: 1px solid rgb(128, 128, 128);
+            }
+            hr{
+                margin: 40px 0px;
+            }
+            .details .heading{
+                margin: 30px 0px;
+            }
+            .details p{
+                margin-bottom: 30px;
+            }
+            table{
+                border-collapse: collapse;
+                empty-cells: hide;
+                color: black;
+            }
+            table tbody td,th{
+                border: 1px solid #c3cad8;
+                padding: 10px;
+                width: 60;
+            }
+            table tbody td{
+                text-align: center;
+            }
+            table tbody th{
+                font-size: 0.8em;
+                background-color: #41923e;
+            }
+            input[type="radio"]{
+                width: 25px;
+                height: 20px;
+            }
+            textarea{
+                padding: 10px;
+                font-size: 20px;
+                width: 550px;
+                height: 150px;
+            }
+            .button{
+                display: flex;
+                justify-content: center;
+            }
+            button{
+                width: 170px;
+                height: 45px;
+                background-color: green;
+                border:2px solid green ;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 1em;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: #007a31;
+                border: 2px solid #007a31;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <form class="center">
+            <h1>GURU KASHI UNIVERSITY</h1>
+            <div class="details">
+              <label>DEPARTMENT NAME</label> <br>
+              <input type="text" name="department" id="sname"><br><br>
+              <label>Student Name</label>
+              <div class="between">
+                  <input type="text" name="stuname" placeholder="First Name" class="height">
+                  <input type="text" name="stuname" placeholder="Last Name" class="height" id="width">
+              </div>
+              <br><br>
+              <label>Date</label><br> <br>
+              <input type="date" class="height" id="space"> <br> <br>
+              <label>How long have you been a student here?</label><br> <br>
+              <select>
+                  <option value="less than 1 month">please select</option>
+                  <option value="6 month">6 month</option>
+                  <option value="1 year">1 year</option>
+                  <option value="2 year">2 year</option>
+                  <option value="3 year ">3 year</option>
+                  <option value="4 year">4 year</option>
+              </select>
+              <hr>
+
+              <h4 class="headline">Please rate of the following aspect of your education</h4>
+              <p>curriculam and classes for the term</p>
+              <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Strongly Disagree</th>
+                        <th>Disagree</th>
+                        <th>Natural</th>
+                        <th>Agree</th>
+                        <th>Strongly Agree</th>
+                    </tr>
+                    <tr>
+                        <Th><label> The class discription accrutaly describe the content.</label></Th>
+                        <td><input type="radio" name="accurately" class="size"></td>
+                        <td><input type="radio" name="accurately" class="size"></td>
+                        <td><input type="radio" name="accurately" class="size"></td>
+                        <td><input type="radio" name="accurately" class="size"></td>
+                        <td><input type="radio" name="accurately" class="size"></td>
+                    </tr>
+                    <tr>
+                        <Th><label> The textbooks and learning material were relevant and useful.</label></Th>
+                        <td><input type="radio" name="textbooks" class="size"></td>
+                        <td><input type="radio" name="textbooks" class="size"></td>
+                        <td><input type="radio" name="textbooks" class="size"></td>
+                        <td><input type="radio" name="textbooks" class="size"></td>
+                        <td><input type="radio" name="textbooks" class="size"></td>
+                    </tr>
+                    <tr>
+                        <Th><label> Tests and assignment were based on material covered in each class.</label></Th>
+                        <td><input type="radio" name="Tests" class="size"></td>
+                        <td><input type="radio" name="Tests" class="size"></td>
+                        <td><input type="radio" name="Tests" class="size"></td>
+                        <td><input type="radio" name="Tests" class="size"></td>
+                        <td><input type="radio" name="Tests" class="size"></td>
+                    </tr>
+                </tbody>
+              </table>
+              <br> <br>
+              <p>Instruction</p>
+              <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Strongly Disagree</th>
+                        <th>Disagree</th>
+                        <th>Natural</th>
+                        <th>Agree</th>
+                        <th>Strongly Agree</th>
+                    </tr>
+                    <tr>
+                        <Th><label>The instructors were qualified to teach these classes.</label></Th>
+                        <td><input type="radio" name="instructors" class="size"></td>
+                        <td><input type="radio" name="instructors" class="size"></td>
+                        <td><input type="radio" name="instructors" class="size"></td>
+                        <td><input type="radio" name="instructors" class="size"></td>
+                        <td><input type="radio" name="instructors" class="size"></td>
+                    </tr>
+                    <tr>
+                        <Th><label>The instructors demonstrated enthusiasm for the subject matter.</label></Th>
+                        <td><input type="radio" name="subject" class="size"></td>
+                        <td><input type="radio" name="subject" class="size"></td>
+                        <td><input type="radio" name="subject" class="size"></td>
+                        <td><input type="radio" name="subject" class="size"></td>
+                        <td><input type="radio" name="subject" class="size"></td>
+                    </tr>
+                    <tr>
+                        <Th><label>The instructors were available and helpful to student outside of class.</label></Th>
+                        <td><input type="radio" name="helpful" class="size"></td>
+                        <td><input type="radio" name="helpful" class="size"></td>
+                        <td><input type="radio" name="helpful" class="size"></td>
+                        <td><input type="radio" name="helpful" class="size"></td>
+                        <td><input type="radio" name="helpful" class="size"></td>
+                    </tr>
+                </tbody>
+              </table>
+              <hr>
+                <p></p>How likely are you to recommend our university to a friend or collegue?</p>
+                <input type="radio" name="likely" class="size">&nbsp<label>Very likely</label> <br> <br>
+                <input type="radio" name="likely" class="size">&nbsp<label>Somewhat likely</label><br> <br>
+                <input type="radio" name="likely" class="size">&nbsp<label>Unsure</label><br> <br>
+                <input type="radio" name="likely" class="size">&nbsp<label>Not very likely</label><br> <br>
+                <input type="radio" name="likely" class="size">&nbsp<label>Not likely</label><br> <br>
+                <p> If not, why?</p>
+                <textarea name="comments" id="comment"></textarea>
+                <p>Give your feedback</p>
+                <textarea name="comments" id="comment"></textarea>
+                <hr>
+                <div class="button">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>
+        </body>
+        </html>
